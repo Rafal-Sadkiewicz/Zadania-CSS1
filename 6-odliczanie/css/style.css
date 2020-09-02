@@ -1,0 +1,54 @@
+/* .headtext{
+    font-size: 600%;
+    animation-name: head;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#text2{
+    animation-delay: 2s;
+}
+
+@keyframes head {
+    0% {font-size:600%; opacity:1;}
+    50% {font-size:0; opacity:0;}
+    100% {font-size:600%;opacity:1;}
+} */
+
+body
+{
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+h1
+{
+    
+    font-size: 3em;
+    
+}
+
+h1::after
+{
+    animation-name: count;
+    animation-duration: 10s;
+    content: "";
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes count
+{
+    0% {content: "10"}
+    10% {content: "9"}
+    20% {content: "8"}
+    30% {content: "7"}
+    40% {content: "6"}
+    50% {content: "5"}
+    60% {content: "4"}
+    70% {content: "3"}
+    80% {content: "2"}
+    90% {content: "1"}
+    100% {content: "I love CSS :)"}  
+}
