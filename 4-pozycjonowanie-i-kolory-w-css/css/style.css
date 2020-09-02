@@ -1,0 +1,115 @@
+body
+{
+    background-color: black;
+}
+
+.container
+{
+    background-color: white;
+    width:640px;
+    height: 640px;
+    position: relative;
+}
+
+.box
+{
+    width: 200px;
+    height: 200px;
+    background-color: lightgray;
+    position: absolute;
+}
+
+.circle
+{
+    background-color: lightgrey;
+    width: 100px;
+    height: 100px;
+    border: black 2px solid;
+    border-radius: 90rem;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+/* odległość od lewej */
+.red.box, .yellow.box, .purple.box
+{
+    left: 10px
+}
+
+.blue.box, .black.box, .grey.box
+
+{
+    left: 220px;
+}
+
+.green.box, .orange.box, .pink.box
+{
+    left: 430px;
+}
+/* odległość od góry */
+.red.box, .blue.box, .green.box.box
+{
+    top: 10px;
+}
+
+.yellow.box, .black.box, .orange.box
+{
+    top: 220px;
+}
+
+.purple.box, .grey.box, .pink.box
+{
+    top: 430px;
+}
+
+/* Kolory */
+
+.red.box, .red.circle
+{
+    background-color: red;
+}
+.blue.box, .blue.circle
+{
+    background-color: blue;
+}
+.green.box, .green.circle
+{
+    background-color: green;
+}
+.yellow.box, .yellow.circle 
+{
+    background-color: yellow;
+}
+.black.box, .black.circle
+{
+    background-color: black;
+}
+.orange.box, .orange.circle
+{
+    background-color: orange;
+}
+.purple.box, .purple.circle
+{
+    background-color: purple;
+}
+.grey.box, .grey.circle
+{
+    background-color: gray;
+}
+.pink.box, .pink.circle
+{
+    background-color: pink;
+}
+
+
+
+
+
+
+
+
+
+
+
+
