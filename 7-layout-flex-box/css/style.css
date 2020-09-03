@@ -1,0 +1,92 @@
+*
+{
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+header
+{
+    background-color: red;
+    padding: 20px 0;
+    font-size: 1.5em;
+}
+
+.left
+{
+    background-color: green; 
+}
+
+article
+{
+    background-color: lightblue;
+    flex-basis: 50%
+}
+
+.right
+{
+    background-color: pink;
+}
+
+footer
+{
+    background-color: purple;
+    display: block;
+    font-size: 2.1em;
+    padding: 15px 0;
+}
+
+aside
+{
+    flex-basis: 25%;
+}
+
+.container
+{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    font-size: 2.1em;
+
+}
+
+@media (max-width: 992px)
+{
+    .container
+    {
+        flex-wrap: wrap;
+        height: 800px;
+    }
+
+    .left
+    {
+        order: 5;
+        flex-basis: 100%;
+    }
+
+    article
+    {
+        flex-basis: 75%;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .container
+    {
+        flex-direction: column;
+    }
+
+    .container *
+    {
+        flex-basis: 33.33%;
+        order: 0;
+    }
+
+    .container article
+    {
+        order: -5;
+    }
+}
